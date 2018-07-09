@@ -1,0 +1,10 @@
+GC_FUNCTIONS = True
+USE_SERIAL = True
+
+BOARD := rg
+
+VARIANTS := v1_ddr_128mb
+JZ_VERSION = 4760
+
+CFLAGS_all := -mips32
+CFLAGS_v1_ddr_128mb := -DSDRAM_H5PS1G63EFR_S6C=1
